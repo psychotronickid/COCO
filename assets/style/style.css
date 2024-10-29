@@ -50,10 +50,16 @@ p {
 
 .header-content__icons a{
     text-decoration: none;
-}
-.header-content__icons svg {
-    width: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: rgba(244, 244, 246, 1);
     height: 32px;
+    width: 32px;
+}
+.header-content__icons svg path {
+    fill: black;
 }
 .header-content__items ul {
     list-style: none;
@@ -1195,9 +1201,18 @@ p {
     gap: 8px;
     margin-bottom: 56px;
 }
-.footer-content__top-social__links svg {
-    width: 32px;
+.footer-content__top-social__links a {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
     height: 32px;
+    width: 32px;
+}
+.footer-content__top-social__links svg {
+    fill: white;
 }
 .footer-first-block {
     width: 240px;

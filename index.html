@@ -184,7 +184,30 @@
                 </div>
             </div>
         </div>
-        <div class="main-content__searchAndSort">
+        <div class="main-content__filters">
+            <div class="search-mobile__wrapper">
+                <div class="search-mobile">
+                    <svg>
+                        <use xlink:href="assets/images/icons/sprite-multi.svg#lens"></use>
+                    </svg>
+                </div>
+            </div>
+            <div class="sort-mobile__wrapper">
+                <div class="sort-mobile">
+                    <svg>
+                        <use xlink:href="assets/images/icons/sprite-multi.svg#sort"></use>
+                    </svg>
+                    Sort
+                </div>
+            </div>
+            <div class="filter-mobile__wrapper">
+                <div class="filter-mobile">
+                    <svg>
+                        <use xlink:href="assets/images/icons/sprite-multi.svg#filter"></use>
+                    </svg>
+                    Filter
+                </div>
+            </div>
             <div class="main-content__search">
                 <div class="text-field__icon text-field__icon_search">
                     <input class="text-field__input" type="text" id="search"
@@ -313,21 +336,29 @@
                 <a href="#">Read more</a>
             </div>
         </div>
+        <div class="main-content__description-mobile">
+            <h2>Our Rankings and Real Customer Reviews 2024</h2>
+        </div>
         <section class="products">
             <div class="main-content__cards">
                 <div class="main-content__card">
                     <div class="card-items">
-                        <div class="gold-cup">
-                            <svg>
-                                <use xlink:href="assets/images/icons/sprite-multi.svg#gold-cup"></use>
-                            </svg>
-                            <span>1</span>
-                        </div>
                         <div class="card-item__img">
+                            <div class="gold-cup">
+                                <svg>
+                                    <use xlink:href="assets/images/icons/sprite-multi.svg#gold-cup"></use>
+                                </svg>
+                                <span>1</span>
+                            </div>
                             <picture class="card-bg">
                                 <source srcset="assets/images/card-bg.png">
                                 <img src="assets/images/card-bg.png" alt="Perfect Stones">
                             </picture>
+                            <div class="card-bg__heart-icon">
+                                <svg width="16" height="15">
+                                    <use xlink:href="assets/images/icons/sprite-multi.svg#heart-empty"></use>
+                                </svg>
+                            </div>
                             <div class="card-bg__icons">
                                 <div class="card-bg__icon">
                                     <svg width="16" height="15">
@@ -352,322 +383,326 @@
                                 </div>
                             </div>
                         </div>
-
-                        <div class="card-item__description">
-                            <div class="description-nameLike">
-                                <div class="description-name">
-                                    <div class="name-logoTitle">
-                                        <div class="name-logo">
-                                            <picture>
-                                                <source srcset="assets/images/card-logo__M.png">
-                                                <img src="assets/images/card-logo__M.png">
-                                            </picture>
-                                        </div>
-                                        <div class="name-title">
-                                            <h3>Perfect Stones</h3>
-                                            <p>since 1995</p>
-                                        </div>
+                        <div class="card-item__header">
+                            <div class="description-name">
+                                <div class="name-logoTitle">
+                                    <div class="name-logo">
+                                        <picture>
+                                            <source srcset="assets/images/card-logo__M.png">
+                                            <img src="assets/images/card-logo__M.png">
+                                        </picture>
                                     </div>
-                                    <div class="name-score">
-                                        <div class="score-cup">
-                                            <svg>
-                                                <use xlink:href="assets/images/icons/sprite-multi.svg#gold-cup"></use>
-                                            </svg>
-                                            <p>97.56</p>
-                                        </div>
-                                        <p>total score</p>
+                                    <div class="name-title">
+                                        <h3>Perfect Stones</h3>
+                                        <p>since 1995</p>
                                     </div>
                                 </div>
-                                <div class="description-like">
+                                <div class="name-score">
+                                    <div class="score-cup">
+                                        <svg>
+                                            <use xlink:href="assets/images/icons/sprite-multi.svg#gold-cup"></use>
+                                        </svg>
+                                        <p>97.56</p>
+                                    </div>
+                                    <p>total score</p>
+                                </div>
+                            </div>
+                            <div class="description-like">
+                                <svg>
+                                    <use xlink:href="assets/images/icons/sprite-multi.svg#heart-empty"></use>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="card-item__report">
+                            <div class="shopperReport-title">
+                                <div class="shopperReport-title__name">
+                                    <p>Mystery Shopper Report</p>
+                                </div>
+                                <div class="shopperReport-title__like">
+                                    <p>4.3
+                                    </p>
                                     <svg>
-                                        <use xlink:href="assets/images/icons/sprite-multi.svg#heart-empty"></use>
+                                        <use xlink:href="assets/images/icons/sprite-multi.svg#empty-like"></use>
                                     </svg>
                                 </div>
                             </div>
-                            <div class="description-shopperReport">
-                                <div class="shopperReport-title">
-                                    <div class="shopperReport-title__name">
-                                        <p>Mystery Shopper Report</p>
-                                    </div>
-                                    <div class="shopperReport-title__like">
-                                        <p>4.3
-                                        </p>
-                                        <svg>
-                                            <use xlink:href="assets/images/icons/sprite-multi.svg#empty-like"></use>
-                                        </svg>
-                                    </div>
-                                </div>
-                                <div class="shoppertReport-score">
-                                    <div class="shopperReport-first">
-                                        <div class="shopperReport-score__items">
-                                            <div class="shopperReport-score__nameItems">
-                                                <div class="shopperReport-score__name">
-                                                    <p>Price:</p>
-                                                </div>
-                                                <div class="shopperReport-score__name">
-                                                    <p>Prepayment:</p>
-                                                </div>
-                                                <div class="shopperReport-score__name">
-                                                    <p>Quote Turnaround:</p>
+                            <div class="shoppertReport-score">
+                                <div class="shopperReport-first">
+                                    <div class="shopperReport-score__items">
+                                        <div class="shopperReport-score__nameItems">
+                                            <div class="shopperReport-score__name">
+                                                <p>Price:</p>
+                                            </div>
+                                            <div class="shopperReport-score__name">
+                                                <p>Prepayment:</p>
+                                            </div>
+                                            <div class="shopperReport-score__name">
+                                                <p>Quote Turnaround:</p>
+                                            </div>
+                                        </div>
+                                        <div class="shopperReport-score__valueItems">
+                                            <div class="shopperReport-score__value">
+                                                <p>4.0</p>
+                                                <div class="shopperReport-score__point">
+                                                    <meter id="value100" value="100"></meter>
+                                                    <meter id="value100" value="100"></meter>
+                                                    <meter id="value100" value="100"></meter>
+                                                    <meter id="value100" value="100"></meter>
+                                                    <meter id="value0" value="0"></meter>
                                                 </div>
                                             </div>
-                                            <div class="shopperReport-score__valueItems">
-                                                <div class="shopperReport-score__value">
-                                                    <p>4.0</p>
-                                                    <div class="shopperReport-score__point">
-                                                        <meter id="value100" value="100"></meter>
-                                                        <meter id="value100" value="100"></meter>
-                                                        <meter id="value100" value="100"></meter>
-                                                        <meter id="value100" value="100"></meter>
-                                                        <meter id="value0" value="0"></meter>
-                                                    </div>
-                                                </div>
-                                                <div class="shopperReport-score__value">
-                                                    <p>4.0</p>
-                                                    <div class="shopperReport-score__point">
-                                                        <meter id="value100" value="100"></meter>
-                                                        <meter id="value100" value="100"></meter>
-                                                        <meter id="value100" value="100"></meter>
-                                                        <meter id="value100" value="100"></meter>
-                                                        <meter id="value0" value="0"></meter>
-                                                    </div>
-                                                </div>
-                                                <div class="shopperReport-score__value">
-                                                    <p>4.0</p>
-                                                    <div class="shopperReport-score__point">
-                                                        <meter id="value100" value="100" high="4"></meter>
-                                                        <meter id="value100" value="100"></meter>
-                                                        <meter id="value100" value="100"></meter>
-                                                        <meter id="value100" value="100"></meter>
-                                                        <meter id="value100" value="100"></meter>
-                                                    </div>
+                                            <div class="shopperReport-score__value">
+                                                <p>4.0</p>
+                                                <div class="shopperReport-score__point">
+                                                    <meter id="value100" value="100"></meter>
+                                                    <meter id="value100" value="100"></meter>
+                                                    <meter id="value100" value="100"></meter>
+                                                    <meter id="value100" value="100"></meter>
+                                                    <meter id="value0" value="0"></meter>
                                                 </div>
                                             </div>
-                                            <div class="shopperReport-score__descriptionItems">
-                                                <div class="shopperReport-score__description">
-                                                    <p>above avg.</p>
-                                                </div>
-                                                <div class="shopperReport-score__description">
-                                                    <p>50/50</p>
-                                                </div>
-                                                <div class="shopperReport-score__description">
-                                                    <p>2 days</p>
+                                            <div class="shopperReport-score__value">
+                                                <p>4.0</p>
+                                                <div class="shopperReport-score__point">
+                                                    <meter id="value100" value="100" high="4"></meter>
+                                                    <meter id="value100" value="100"></meter>
+                                                    <meter id="value100" value="100"></meter>
+                                                    <meter id="value100" value="100"></meter>
+                                                    <meter id="value100" value="100"></meter>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="shopperReport-second">
-                                        <div class="shopperReport-score__items">
-                                            <div class="shopperReport-score__nameItems">
-                                                <div class="shopperReport-score__name">
-                                                    <p>Production time:</p>
-                                                </div>
-                                                <div class="shopperReport-score__name">
-                                                    <p>Staff expertise:</p>
-                                                </div>
-                                                <div class="shopperReport-score__name">
-                                                    <p>Staff friendliness:</p>
-                                                </div>
+                                        <div class="shopperReport-score__descriptionItems">
+                                            <div class="shopperReport-score__description">
+                                                <p>above avg.</p>
                                             </div>
-                                            <div class="shopperReport-score__valueItems">
-                                                <div class="shopperReport-score__value">
-                                                    <p>4.0</p>
-                                                    <div class="shopperReport-score__point">
-                                                        <meter id="value100" value="100"></meter>
-                                                        <meter id="value100" value="100"></meter>
-                                                        <meter id="value100" value="100"></meter>
-                                                        <meter id="value100" value="100"></meter>
-                                                        <meter id="value0" value="0"></meter>
-                                                    </div>
-                                                </div>
-                                                <div class="shopperReport-score__value">
-                                                    <p>4.0</p>
-                                                    <div class="shopperReport-score__point">
-                                                        <meter id="value100" value="100"></meter>
-                                                        <meter id="value100" value="100"></meter>
-                                                        <meter id="value100" value="100"></meter>
-                                                        <meter id="value100" value="100"></meter>
-                                                        <meter id="value0" value="0"></meter>
-                                                    </div>
-                                                </div>
-                                                <div class="shopperReport-score__value">
-                                                    <p>4.0</p>
-                                                    <div class="shopperReport-score__point">
-                                                        <meter id="value100" value="100" high="4"></meter>
-                                                        <meter id="value100" value="100"></meter>
-                                                        <meter id="value100" value="100"></meter>
-                                                        <meter id="value100" value="100"></meter>
-                                                        <meter id="value100" value="100"></meter>
-                                                    </div>
-                                                </div>
+                                            <div class="shopperReport-score__description">
+                                                <p>50/50</p>
                                             </div>
-                                            <div class="shopperReport-score__descriptionItems">
-                                                <div class="shopperReport-score__description">
-                                                    <p>14 days</p>
-                                                </div>
-                                                <div class="shopperReport-score__description">
-                                                    <p>high</p>
-                                                </div>
-                                                <div class="shopperReport-score__description">
-                                                    <p>high</p>
-                                                </div>
+                                            <div class="shopperReport-score__description">
+                                                <p>2 days</p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-
-                            </div>
-                            <div class="card-information">
-                                <div class="card-information__title">
-                                    <p>About Perfect Stones</p>
+                                <div class="shopperReport-second">
+                                    <div class="shopperReport-score__items">
+                                        <div class="shopperReport-score__nameItems">
+                                            <div class="shopperReport-score__name">
+                                                <p>Production time:</p>
+                                            </div>
+                                            <div class="shopperReport-score__name">
+                                                <p>Staff expertise:</p>
+                                            </div>
+                                            <div class="shopperReport-score__name">
+                                                <p>Staff friendliness:</p>
+                                            </div>
+                                        </div>
+                                        <div class="shopperReport-score__valueItems">
+                                            <div class="shopperReport-score__value">
+                                                <p>4.0</p>
+                                                <div class="shopperReport-score__point">
+                                                    <meter id="value100" value="100"></meter>
+                                                    <meter id="value100" value="100"></meter>
+                                                    <meter id="value100" value="100"></meter>
+                                                    <meter id="value100" value="100"></meter>
+                                                    <meter id="value0" value="0"></meter>
+                                                </div>
+                                            </div>
+                                            <div class="shopperReport-score__value">
+                                                <p>4.0</p>
+                                                <div class="shopperReport-score__point">
+                                                    <meter id="value100" value="100"></meter>
+                                                    <meter id="value100" value="100"></meter>
+                                                    <meter id="value100" value="100"></meter>
+                                                    <meter id="value100" value="100"></meter>
+                                                    <meter id="value0" value="0"></meter>
+                                                </div>
+                                            </div>
+                                            <div class="shopperReport-score__value">
+                                                <p>4.0</p>
+                                                <div class="shopperReport-score__point">
+                                                    <meter id="value100" value="100" high="4"></meter>
+                                                    <meter id="value100" value="100"></meter>
+                                                    <meter id="value100" value="100"></meter>
+                                                    <meter id="value100" value="100"></meter>
+                                                    <meter id="value100" value="100"></meter>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="shopperReport-score__descriptionItems">
+                                            <div class="shopperReport-score__description">
+                                                <p>14 days</p>
+                                            </div>
+                                            <div class="shopperReport-score__description">
+                                                <p>high</p>
+                                            </div>
+                                            <div class="shopperReport-score__description">
+                                                <p>high</p>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="card-information__text">
-                                    <p>Laborum dolore exercitation culpa ea Lorem mollit sint minim. Est consectetur
-                                        eiusmod
-                                        fugiat excepteur mollit pariatur deserunt mollit Laborum dolore Laborum fugiat
-                                        <a
-                                                href="#">Read more</a></p>
-                                </div>
                             </div>
-
                         </div>
-                        <div class="card-item__feedBackAndButton">
-                            <div class="card-item__feedBack">
-                                <div class="feedBack-items">
-                                    <div class="feedBack-Totalscore">
-                                        <div class="feedBack-Totalscore__title">
-                                            <p>Customer Feedback Score</p>
-                                        </div>
-                                        <div class="feedBack-Totalscore__value">
-                                            <p class="Totalscore-value__title">5.0</p>
-                                            <svg>
-                                                <use xlink:href="assets/images/icons/sprite-multi.svg#white-star"></use>
-                                            </svg>
+                        <div class="card-item__information">
+                            <div class="card-information__title">
+                                <p>About Perfect Stones</p>
+                            </div>
+                            <div class="card-information__text">
+                                <p>Laborum dolore exercitation culpa ea Lorem mollit sint minim. Est consectetur
+                                    eiusmod
+                                    fugiat excepteur mollit pariatur deserunt mollit Laborum dolore Laborum fugiat
+                                    <a
+                                            href="#">Read more</a></p>
+                            </div>
+                        </div>
+                        <div class="card-item__feedBack">
+                            <div class="feedBack-items">
+                                <div class="feedBack-Totalscore">
+                                    <div class="feedBack-Totalscore__title">
+                                        <p>Customer Feedback Score</p>
+                                    </div>
+                                    <div class="feedBack-Totalscore__value">
+                                        <p class="Totalscore-value__title">5.0</p>
+                                        <svg>
+                                            <use xlink:href="assets/images/icons/sprite-multi.svg#white-star"></use>
+                                        </svg>
+                                        <p class="Totalscore-value__reviews">reviews: 15</p>
+                                    </div>
+                                </div>
+                                <div class="feedBack-listScore">
+                                    <div class="feedBack-listScore__item">
+                                        <p class="feedBack-listScore__title">Google</p>
+                                        <div class="feedBack-listScore__right">
+                                            <p class="feedBack-listScore__right-title">5.0</p>
+                                            <div class="item-stars">
+                                                <svg>
+                                                    <use xlink:href="assets/images/icons/sprite-multi.svg#gold-star"></use>
+                                                </svg>
+                                                <svg>
+                                                    <use xlink:href="assets/images/icons/sprite-multi.svg#gold-star"></use>
+                                                </svg>
+                                                <svg>
+                                                    <use xlink:href="assets/images/icons/sprite-multi.svg#gold-star"></use>
+                                                </svg>
+                                                <svg>
+                                                    <use xlink:href="assets/images/icons/sprite-multi.svg#gold-star"></use>
+                                                </svg>
+                                                <svg>
+                                                    <use xlink:href="assets/images/icons/sprite-multi.svg#gold-star"></use>
+                                                </svg>
+                                            </div>
                                             <p class="Totalscore-value__reviews">reviews: 15</p>
                                         </div>
                                     </div>
-                                    <div class="feedBack-listScore">
-                                        <div class="feedBack-listScore__first">
-                                            <p>Google</p>
-                                            <p>YELP</p>
-                                            <p>Facebook</p>
-                                            <p>CoCo</p>
-                                        </div>
-                                        <div class="feedBack-listScore__second">
-                                            <div class="listScore-second__item">
-                                                <p>5.0</p>
-                                                <div class="item-stars">
-                                                    <svg>
-                                                        <use xlink:href="assets/images/icons/sprite-multi.svg#gold-star"></use>
-                                                    </svg>
-                                                    <svg>
-                                                        <use xlink:href="assets/images/icons/sprite-multi.svg#gold-star"></use>
-                                                    </svg>
-                                                    <svg>
-                                                        <use xlink:href="assets/images/icons/sprite-multi.svg#gold-star"></use>
-                                                    </svg>
-                                                    <svg>
-                                                        <use xlink:href="assets/images/icons/sprite-multi.svg#gold-star"></use>
-                                                    </svg>
-                                                    <svg>
-                                                        <use xlink:href="assets/images/icons/sprite-multi.svg#gold-star"></use>
-                                                    </svg>
-                                                </div>
-                                                <p class="Totalscore-value__reviews">reviews: 15</p>
+                                    <div class="feedBack-listScore__item">
+                                        <p class="feedBack-listScore__title">YELP</p>
+                                        <div class="feedBack-listScore__right">
+                                            <p class="feedBack-listScore__right-title">5.0</p>
+                                            <div class="item-stars">
+                                                <svg>
+                                                    <use xlink:href="assets/images/icons/sprite-multi.svg#gold-star"></use>
+                                                </svg>
+                                                <svg>
+                                                    <use xlink:href="assets/images/icons/sprite-multi.svg#gold-star"></use>
+                                                </svg>
+                                                <svg>
+                                                    <use xlink:href="assets/images/icons/sprite-multi.svg#gold-star"></use>
+                                                </svg>
+                                                <svg>
+                                                    <use xlink:href="assets/images/icons/sprite-multi.svg#gold-star"></use>
+                                                </svg>
+                                                <svg>
+                                                    <use xlink:href="assets/images/icons/sprite-multi.svg#gold-star"></use>
+                                                </svg>
                                             </div>
-                                            <div class="listScore-second__item">
-                                                <p>5.0</p>
-                                                <div class="item-stars">
-                                                    <svg>
-                                                        <use xlink:href="assets/images/icons/sprite-multi.svg#gold-star"></use>
-                                                    </svg>
-                                                    <svg>
-                                                        <use xlink:href="assets/images/icons/sprite-multi.svg#gold-star"></use>
-                                                    </svg>
-                                                    <svg>
-                                                        <use xlink:href="assets/images/icons/sprite-multi.svg#gold-star"></use>
-                                                    </svg>
-                                                    <svg>
-                                                        <use xlink:href="assets/images/icons/sprite-multi.svg#gold-star"></use>
-                                                    </svg>
-                                                    <svg>
-                                                        <use xlink:href="assets/images/icons/sprite-multi.svg#gold-star"></use>
-                                                    </svg>
-                                                </div>
-                                                <p class="Totalscore-value__reviews">reviews: 15</p>
-                                            </div>
-                                            <div class="listScore-second__item">
-                                                <p>5.0</p>
-                                                <div class="item-stars">
-                                                    <svg>
-                                                        <use xlink:href="assets/images/icons/sprite-multi.svg#gold-star"></use>
-                                                    </svg>
-                                                    <svg>
-                                                        <use xlink:href="assets/images/icons/sprite-multi.svg#gold-star"></use>
-                                                    </svg>
-                                                    <svg>
-                                                        <use xlink:href="assets/images/icons/sprite-multi.svg#gold-star"></use>
-                                                    </svg>
-                                                    <svg>
-                                                        <use xlink:href="assets/images/icons/sprite-multi.svg#gold-star"></use>
-                                                    </svg>
-                                                    <svg>
-                                                        <use xlink:href="assets/images/icons/sprite-multi.svg#gold-star"></use>
-                                                    </svg>
-                                                </div>
-                                                <p class="Totalscore-value__reviews">reviews: 15</p>
-                                            </div>
-                                            <div class="listScore-second__item">
-                                                <p>5.0</p>
-                                                <div class="item-stars">
-                                                    <svg>
-                                                        <use xlink:href="assets/images/icons/sprite-multi.svg#gold-star"></use>
-                                                    </svg>
-                                                    <svg>
-                                                        <use xlink:href="assets/images/icons/sprite-multi.svg#gold-star"></use>
-                                                    </svg>
-                                                    <svg>
-                                                        <use xlink:href="assets/images/icons/sprite-multi.svg#gold-star"></use>
-                                                    </svg>
-                                                    <svg>
-                                                        <use xlink:href="assets/images/icons/sprite-multi.svg#gold-star"></use>
-                                                    </svg>
-                                                    <svg>
-                                                        <use xlink:href="assets/images/icons/sprite-multi.svg#gold-star"></use>
-                                                    </svg>
-                                                </div>
-                                                <p class="Totalscore-value__reviews">reviews: 15</p>
-                                            </div>
+                                            <p class="Totalscore-value__reviews">reviews: 15</p>
                                         </div>
                                     </div>
-                                    <div class="feedBack-personScore">
-                                        <div class="personScore-title">
-                                            <p>Samantha Smith</p>
+                                    <div class="feedBack-listScore__item">
+                                        <p class="feedBack-listScore__title">Facebook</p>
+                                        <div class="feedBack-listScore__right">
+                                            <p class="feedBack-listScore__right-title">5.0</p>
+                                            <div class="item-stars">
+                                                <svg>
+                                                    <use xlink:href="assets/images/icons/sprite-multi.svg#gold-star"></use>
+                                                </svg>
+                                                <svg>
+                                                    <use xlink:href="assets/images/icons/sprite-multi.svg#gold-star"></use>
+                                                </svg>
+                                                <svg>
+                                                    <use xlink:href="assets/images/icons/sprite-multi.svg#gold-star"></use>
+                                                </svg>
+                                                <svg>
+                                                    <use xlink:href="assets/images/icons/sprite-multi.svg#gold-star"></use>
+                                                </svg>
+                                                <svg>
+                                                    <use xlink:href="assets/images/icons/sprite-multi.svg#gold-star"></use>
+                                                </svg>
+                                            </div>
+                                            <p class="Totalscore-value__reviews">reviews: 15</p>
+                                        </div>
+                                    </div>
+                                    <div class="feedBack-listScore__item">
+                                        <p class="feedBack-listScore__title">CoCo</p>
+                                        <div class="feedBack-listScore__right">
+                                            <p class="feedBack-listScore__right-title">5.0</p>
+                                            <div class="item-stars">
+                                                <svg>
+                                                    <use xlink:href="assets/images/icons/sprite-multi.svg#gold-star"></use>
+                                                </svg>
+                                                <svg>
+                                                    <use xlink:href="assets/images/icons/sprite-multi.svg#gold-star"></use>
+                                                </svg>
+                                                <svg>
+                                                    <use xlink:href="assets/images/icons/sprite-multi.svg#gold-star"></use>
+                                                </svg>
+                                                <svg>
+                                                    <use xlink:href="assets/images/icons/sprite-multi.svg#gold-star"></use>
+                                                </svg>
+                                                <svg>
+                                                    <use xlink:href="assets/images/icons/sprite-multi.svg#gold-star"></use>
+                                                </svg>
+                                            </div>
+                                            <p class="Totalscore-value__reviews">reviews: 15</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="feedBack-personScore">
+                                    <div class="personScore-title__wrapper">
+                                        <p class="personScore-title">Samantha Smith</p>
+                                        <div class="feedBack-personScore__icon">
                                             <svg>
                                                 <use xlink:href="assets/images/icons/sprite-multi.svg#gold-star"></use>
                                             </svg>
-                                            <p>5.0</p>
                                         </div>
-                                        <p>Laborum dolore exercitation culpa ea Lorem mollit sint minim. Est consectetur
-                                            mollit sint <a href="#">Read more</a></p>
+                                        <p class="personScore-title">5.0</p>
                                     </div>
+                                    <p class="personScore-text">Laborum dolore exercitation culpa ea Lorem mollit
+                                        sint minim. Est consectetur
+                                        mollit sint <a href="#">Read more</a></p>
                                 </div>
                             </div>
-                            <div class="card-item__buttons">
-                                <div class="button-profile">
-                                    <button aria-label="View profile" type="button"><a href="#">View profile</a></button>
-                                </div>
-                                <div class="button-contacts">
-                                    <button aria-label="Show contacts" type="button"><a href="#">Show contacts</a></button>
-                                </div>
+                        </div>
+                        <div class="card-item__buttons">
+                            <div class="button-profile">
+                                <button aria-label="View profile" type="button"><a href="#">View profile</a>
+                                </button>
+                            </div>
+                            <div class="button-contacts">
+                                <button aria-label="Show contacts" type="button"><a href="#">Show contacts</a>
+                                </button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <button aria-label="Show more" class="btn-showMore">
-                Show more
-            </button>
+           <div class="btn-showMore__wrapper">
+               <button aria-label="Show more" class="btn-showMore">
+                   Show more
+               </button>
+           </div>
             <div class="pagination">
                 <div class="pagination-item">
                     <svg>

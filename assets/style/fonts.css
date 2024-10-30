@@ -1,9 +1,1 @@
-@font-face {
- font-family: 'interR'  ; src: url("../fonts/Inter_18pt-Regular.ttf");
-}
-@font-face {
- font-family: 'interL'  ; src: url("../fonts/Inter_18pt-Light.ttf");
-}
-@font-face {
- font-family: 'interB'  ; src: url("../fonts/Inter_24pt-Bold.ttf");
-}
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');

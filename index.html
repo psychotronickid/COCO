@@ -8,47 +8,49 @@
 </head>
 <body>
 <header>
-    <div class="container"></div>
     <div class="header-content">
         <div class="header-content__navbar container">
             <div class="header-content__icons">
-                <a href="#">
+                <a href="#" aria-label="Go to facebook">
                     <svg width="24" height="24">
                         <use xlink:href="assets/images/icons/sprite-social.svg#icon-face"></use>
                     </svg>
                 </a>
-                <a href="#">
+                <a href="#" aria-label="Go to instagram">
                     <svg width="16" height="16">
                         <use xlink:href="assets/images/icons/sprite-social.svg#icon-inst"></use>
                     </svg>
                 </a>
-                <a href="#">
+                <a href="#" aria-label="Go to linkedIn">
                     <svg width="16" height="16">
                         <use xlink:href="assets/images/icons/sprite-social.svg#icon-in"></use>
                     </svg>
                 </a>
-                <a href="#">
+                <a href="#" aria-label="Go to pinterest">
                     <svg width="20" height="20">
                         <use xlink:href="assets/images/icons/sprite-social.svg#icon-pint"></use>
                     </svg>
                 </a>
             </div>
-            <div class="header-content__items">
-                <nav>
-                    <ul>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Careers</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Marketing & Promotion Services</a></li>
-                        <li><a href="#">Contact Us</a></li>
-                    </ul>
-                </nav>
-            </div>
+            <nav class="header-content__items">
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Marketing & Promotion Services</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </nav>
         </div>
         <div class="line"></div>
         <div class="header-content__last container">
             <div class="header-content__logo">
-                <a href="#"><img src="assets/images/icons/logo.svg" alt="logo"></a>
+                <a href="#">
+                    <picture>
+                        <source srcset="assets/images/icons/logo.svg">
+                        <img src="assets/images/icons/logo.svg" alt="logo">
+                    </picture>
+                </a>
                 <p>2024 Ranking: Top Countertop <br>
                     Companies in the USA</p>
             </div>
@@ -126,7 +128,7 @@
                 </ul>
             </div>
             <div class="header-content_button">
-                <svg class="header-heart-icon">
+                <svg class="header-heart-icon" aria-label="Favorites">
                     <use xlink:href="assets/images/icons/sprite-multi.svg#heart-empty"></use>
                 </svg>
                 <a class="getListed"><p>Get Listed in 2025</p>
@@ -175,7 +177,10 @@
                     </div>
                 </div>
                 <div class="frame-rightColumn">
-                    <img src="assets/images/main-bg.png">
+                    <picture>
+                        <source srcset="assets/images/main-bg.png">
+                        <img src="assets/images/main-bg.png">
+                    </picture>
                 </div>
             </div>
         </div>
@@ -279,24 +284,24 @@
         <div class="main-content__sortResult">
             <div class="sortResult-item">
                 <p>North Carolina</p><a href="#">
-                <svg>
+                <svg aria-label="Remove filter">
                     <use xlink:href="assets/images/icons/sprite-multi.svg#cross"></use>
                 </svg>
             </a></div>
             <div class="sortResult-item">
                 <p>Rating based on user reviews</p><a href="#">
-                <svg>
+                <svg aria-label="Remove filter">
                     <use xlink:href="assets/images/icons/sprite-multi.svg#cross"></use>
                 </svg>
             </a></div>
             <div class="sortResult-item">
                 <p>Cheap at first</p><a href="#">
-                <svg>
+                <svg aria-label="Remove filter">
                     <use xlink:href="assets/images/icons/sprite-multi.svg#cross"></use>
                 </svg>
             </a></div>
 
-            <a class="sortResult-clear" href="#">Clear All</a>
+            <a aria-label="Clear filters" class="sortResult-clear" href="#">Clear All</a>
 
         </div>
         <div class="main-content__description">
@@ -319,8 +324,10 @@
                             <span>1</span>
                         </div>
                         <div class="card-item__img">
-                            <img class="card-bg" src="assets/images/card-bg.png" alt="Perfect Stones">
-
+                            <picture class="card-bg">
+                                <source srcset="assets/images/card-bg.png">
+                                <img src="assets/images/card-bg.png" alt="Perfect Stones">
+                            </picture>
                             <div class="card-bg__icons">
                                 <div class="card-bg__icon">
                                     <svg width="16" height="15">
@@ -351,7 +358,10 @@
                                 <div class="description-name">
                                     <div class="name-logoTitle">
                                         <div class="name-logo">
-                                            <img src="assets/images/card-logo__M.png">
+                                            <picture>
+                                                <source srcset="assets/images/card-logo__M.png">
+                                                <img src="assets/images/card-logo__M.png">
+                                            </picture>
                                         </div>
                                         <div class="name-title">
                                             <h3>Perfect Stones</h3>
@@ -512,8 +522,10 @@
                                     <p>About Perfect Stones</p>
                                 </div>
                                 <div class="card-information__text">
-                                    <p>Laborum dolore exercitation culpa ea Lorem mollit sint minim. Est consectetur eiusmod
-                                        fugiat excepteur mollit pariatur deserunt mollit Laborum dolore Laborum fugiat <a
+                                    <p>Laborum dolore exercitation culpa ea Lorem mollit sint minim. Est consectetur
+                                        eiusmod
+                                        fugiat excepteur mollit pariatur deserunt mollit Laborum dolore Laborum fugiat
+                                        <a
                                                 href="#">Read more</a></p>
                                 </div>
                             </div>
@@ -643,17 +655,17 @@
                             </div>
                             <div class="card-item__buttons">
                                 <div class="button-profile">
-                                    <button type="button"><a href="#">View profile</a></button>
+                                    <button aria-label="View profile" type="button"><a href="#">View profile</a></button>
                                 </div>
                                 <div class="button-contacts">
-                                    <button type="button"><a href="#">Show contacts</a></button>
+                                    <button aria-label="Show contacts" type="button"><a href="#">Show contacts</a></button>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <button class="btn-showMore">
+            <button aria-label="Show more" class="btn-showMore">
                 Show more
             </button>
             <div class="pagination">
@@ -689,92 +701,97 @@
         </section>
         <section class="FAQ">
             <div class="questions-wrapper">
-                <h2 class="questions-wrapper__title">Frequently Asked Questions and Our Answers About Ordering Countertops
+                <h2 class="questions-wrapper__title">Frequently Asked Questions and Our Answers About Ordering
+                    Countertops
                     <br/><span style="color: rgba(30, 56, 57, 0.5);">in Charleston South Carolina</span></h2>
 
-                    <div class="question-items">
-                        <div class="question-item">
-                            <p>Does every company have guarantees?</p>
-                            <div class="question-item__plus">
-                                <svg>
-                                    <use xlink:href="assets/images/icons/sprite-multi.svg#plus"></use>
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="question-item">
-                            <p>Does every company have guarantees?</p>
-                            <div class="question-item__plus">
-                                <svg>
-                                    <use xlink:href="assets/images/icons/sprite-multi.svg#plus"></use>
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="question-item">
-                            <p>Does every company have guarantees?</p>
-                            <div class="question-item__plus">
-                                <svg>
-                                    <use xlink:href="assets/images/icons/sprite-multi.svg#plus"></use>
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="question-item">
-                            <p>Does every company have guarantees?</p>
-                            <div class="question-item__plus">
-                                <svg>
-                                    <use xlink:href="assets/images/icons/sprite-multi.svg#plus"></use>
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="question-item">
-                            <p>Does every company have guarantees?</p>
-                            <div class="question-item__plus">
-                                <svg>
-                                    <use xlink:href="assets/images/icons/sprite-multi.svg#plus"></use>
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="question-item">
-                            <p>Does every company have guarantees?</p>
-                            <div class="question-item__plus">
-                                <svg>
-                                    <use xlink:href="assets/images/icons/sprite-multi.svg#plus"></use>
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="question-item">
-                            <p>Does every company have guarantees?</p>
-                            <div class="question-item__plus">
-                                <svg>
-                                    <use xlink:href="assets/images/icons/sprite-multi.svg#plus"></use>
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="question-item">
-                            <p>Does every company have guarantees?</p>
-                            <div class="question-item__plus">
-                                <svg>
-                                    <use xlink:href="assets/images/icons/sprite-multi.svg#plus"></use>
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="question-item">
-                            <p>Does every company have guarantees?</p>
-                            <div class="question-item__plus">
-                                <svg>
-                                    <use xlink:href="assets/images/icons/sprite-multi.svg#plus"></use>
-                                </svg>
-                            </div>
+                <div class="question-items">
+                    <div class="question-item">
+                        <p>Does every company have guarantees?</p>
+                        <div class="question-item__plus">
+                            <svg>
+                                <use xlink:href="assets/images/icons/sprite-multi.svg#plus"></use>
+                            </svg>
                         </div>
                     </div>
+                    <div class="question-item">
+                        <p>Does every company have guarantees?</p>
+                        <div class="question-item__plus">
+                            <svg>
+                                <use xlink:href="assets/images/icons/sprite-multi.svg#plus"></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="question-item">
+                        <p>Does every company have guarantees?</p>
+                        <div class="question-item__plus">
+                            <svg>
+                                <use xlink:href="assets/images/icons/sprite-multi.svg#plus"></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="question-item">
+                        <p>Does every company have guarantees?</p>
+                        <div class="question-item__plus">
+                            <svg>
+                                <use xlink:href="assets/images/icons/sprite-multi.svg#plus"></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="question-item">
+                        <p>Does every company have guarantees?</p>
+                        <div class="question-item__plus">
+                            <svg>
+                                <use xlink:href="assets/images/icons/sprite-multi.svg#plus"></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="question-item">
+                        <p>Does every company have guarantees?</p>
+                        <div class="question-item__plus">
+                            <svg>
+                                <use xlink:href="assets/images/icons/sprite-multi.svg#plus"></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="question-item">
+                        <p>Does every company have guarantees?</p>
+                        <div class="question-item__plus">
+                            <svg>
+                                <use xlink:href="assets/images/icons/sprite-multi.svg#plus"></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="question-item">
+                        <p>Does every company have guarantees?</p>
+                        <div class="question-item__plus">
+                            <svg>
+                                <use xlink:href="assets/images/icons/sprite-multi.svg#plus"></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="question-item">
+                        <p>Does every company have guarantees?</p>
+                        <div class="question-item__plus">
+                            <svg>
+                                <use xlink:href="assets/images/icons/sprite-multi.svg#plus"></use>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="comments-wrapper">
-                <h2 class="comments-wrapper__title">Verified Customer Reviews of the Top Stone Countertop Fabrication and Installation Companies
+                <h2 class="comments-wrapper__title">Verified Customer Reviews of the Top Stone Countertop Fabrication
+                    and Installation Companies
                     <br/><span style="color: rgba(30, 56, 57, 0.5);"> in Charleston SC</span></h2>
 
                 <div class="comments-items">
                     <div class="comments-item">
                         <div class="comments-item__avatar">
-                            <img src="/assets/images/avatar.png" alt="avatar">
+                            <picture>
+                                <source srcset="/assets/images/avatar.png">
+                                <img src="/assets/images/avatar.png" alt="avatar" loading="lazy">
+                            </picture>
                         </div>
                         <div class="comments-item__main">
                             <h3 class="comments-item__title">Perfect Stones in Charleston SC</h3>
@@ -801,7 +818,8 @@
                             </div>
 
                             <p class="comments-item__text">
-                                Laborum dolore exercitation culpa ea Lorem mollit sint minim. Est consectetur eiusmod fugiat excepteur mollit pariatur deserunt mollit Laborum
+                                Laborum dolore exercitation culpa ea Lorem mollit sint minim. Est consectetur eiusmod
+                                fugiat excepteur mollit pariatur deserunt mollit Laborum
                             </p>
 
                             <p class="comments-item__link">
@@ -811,7 +829,10 @@
                     </div>
                     <div class="comments-item">
                         <div class="comments-item__avatar">
-                            <img src="/assets/images/avatar.png" alt="avatar">
+                            <picture>
+                                <source srcset="/assets/images/avatar.png">
+                                <img src="/assets/images/avatar.png" alt="avatar" loading="lazy">
+                            </picture>
                         </div>
                         <div class="comments-item__main">
                             <h3 class="comments-item__title">Perfect Stones in Charleston SC</h3>
@@ -838,7 +859,8 @@
                             </div>
 
                             <p class="comments-item__text">
-                                Laborum dolore exercitation culpa ea Lorem mollit sint minim. Est consectetur eiusmod fugiat excepteur mollit pariatur deserunt mollit Laborum
+                                Laborum dolore exercitation culpa ea Lorem mollit sint minim. Est consectetur eiusmod
+                                fugiat excepteur mollit pariatur deserunt mollit Laborum
                             </p>
 
                             <p class="comments-item__link">
@@ -848,7 +870,10 @@
                     </div>
                     <div class="comments-item">
                         <div class="comments-item__avatar">
-                            <img src="/assets/images/avatar.png" alt="avatar">
+                            <picture>
+                                <source srcset="/assets/images/avatar.png">
+                                <img src="/assets/images/avatar.png" alt="avatar" loading="lazy">
+                            </picture>
                         </div>
                         <div class="comments-item__main">
                             <h3 class="comments-item__title">Perfect Stones in Charleston SC</h3>
@@ -875,7 +900,8 @@
                             </div>
 
                             <p class="comments-item__text">
-                                Laborum dolore exercitation culpa ea Lorem mollit sint minim. Est consectetur eiusmod fugiat excepteur mollit pariatur deserunt mollit Laborum
+                                Laborum dolore exercitation culpa ea Lorem mollit sint minim. Est consectetur eiusmod
+                                fugiat excepteur mollit pariatur deserunt mollit Laborum
                             </p>
 
                             <p class="comments-item__link">
@@ -885,7 +911,10 @@
                     </div>
                     <div class="comments-item">
                         <div class="comments-item__avatar">
-                            <img src="/assets/images/avatar.png" alt="avatar">
+                            <picture>
+                                <source srcset="/assets/images/avatar.png">
+                                <img src="/assets/images/avatar.png" alt="avatar" loading="lazy">
+                            </picture>
                         </div>
                         <div class="comments-item__main">
                             <h3 class="comments-item__title">Perfect Stones in Charleston SC</h3>
@@ -912,7 +941,8 @@
                             </div>
 
                             <p class="comments-item__text">
-                                Laborum dolore exercitation culpa ea Lorem mollit sint minim. Est consectetur eiusmod fugiat excepteur mollit pariatur deserunt mollit Laborum
+                                Laborum dolore exercitation culpa ea Lorem mollit sint minim. Est consectetur eiusmod
+                                fugiat excepteur mollit pariatur deserunt mollit Laborum
                             </p>
 
                             <p class="comments-item__link">
@@ -926,7 +956,10 @@
         </section>
         <section class="business">
             <div class="business-left">
-                <img src="/assets/images/kitchen.png" alt="business">
+                <picture>
+                    <source srcset="/assets/images/kitchen.png">
+                    <img src="/assets/images/kitchen.png" alt="business" loading="lazy">
+                </picture>
                 <div class="business-text__block">
                     <h2 class="business-title">Cant find the business?</h2>
 
@@ -934,23 +967,60 @@
                 </div>
             </div>
             <div class="business-right">
-                <button class="business-btn">
+                <button aria-label="Add business" class="business-btn">
                     Add business
                 </button>
             </div>
         </section>
         <section class="rating">
-            <h2 class="rating-title">Ratings of countertop companies in other cities <span style="color: rgba(30, 56, 57, 0.5);">in South Carolina</span></h2>
+            <h2 class="rating-title">Ratings of countertop companies in other cities <span
+                    style="color: rgba(30, 56, 57, 0.5);">in South Carolina</span></h2>
 
             <div class="rating-grid">
-                <div>Charleston</div><div>Charleston</div><div>Charleston</div><div>Charleston</div><div>Charleston</div><div>Charleston</div>
-                <div>Charleston</div><div>Charleston</div><div>Charleston</div><div>Charleston</div><div>Charleston</div><div>Charleston</div>
-                <div>Charleston</div><div>Charleston</div><div>Charleston</div><div>Charleston</div><div>Charleston</div><div>Charleston</div>
-                <div>Charleston</div><div>Charleston</div><div>Charleston</div><div>Charleston</div><div>Charleston</div><div>Charleston</div>
-                <div>Charleston</div><div>Charleston</div><div>Charleston</div><div>Charleston</div><div>Charleston</div><div>Charleston</div>
-                <div>Charleston</div><div>Charleston</div><div>Charleston</div><div>Charleston</div><div>Charleston</div><div>Charleston</div>
-                <div>Charleston</div><div>Charleston</div><div>Charleston</div><div>Charleston</div><div>Charleston</div><div>Charleston</div>
-                <div>Charleston</div><div>Charleston</div>
+                <div>Charleston</div>
+                <div>Charleston</div>
+                <div>Charleston</div>
+                <div>Charleston</div>
+                <div>Charleston</div>
+                <div>Charleston</div>
+                <div>Charleston</div>
+                <div>Charleston</div>
+                <div>Charleston</div>
+                <div>Charleston</div>
+                <div>Charleston</div>
+                <div>Charleston</div>
+                <div>Charleston</div>
+                <div>Charleston</div>
+                <div>Charleston</div>
+                <div>Charleston</div>
+                <div>Charleston</div>
+                <div>Charleston</div>
+                <div>Charleston</div>
+                <div>Charleston</div>
+                <div>Charleston</div>
+                <div>Charleston</div>
+                <div>Charleston</div>
+                <div>Charleston</div>
+                <div>Charleston</div>
+                <div>Charleston</div>
+                <div>Charleston</div>
+                <div>Charleston</div>
+                <div>Charleston</div>
+                <div>Charleston</div>
+                <div>Charleston</div>
+                <div>Charleston</div>
+                <div>Charleston</div>
+                <div>Charleston</div>
+                <div>Charleston</div>
+                <div>Charleston</div>
+                <div>Charleston</div>
+                <div>Charleston</div>
+                <div>Charleston</div>
+                <div>Charleston</div>
+                <div>Charleston</div>
+                <div>Charleston</div>
+                <div>Charleston</div>
+                <div>Charleston</div>
             </div>
         </section>
     </div>
@@ -958,140 +1028,201 @@
 
 <footer>
     <div class="footer-content">
-       <div class="container">
-           <div class="footer-content__top">
-               <div class="footer-first-block">
-                   <img src="/assets/images/white-logo.svg" alt="logo">
-                   <p class="footer-content__top-text">
-                       2024 Ranking: Top Countertop
-                       Companies in the USA
-                   </p>
-                   <div class="footer-content__top-social__links">
-                       <a href="#">
-                           <svg width="24" height="24">
-                               <use xlink:href="assets/images/icons/sprite-social.svg#icon-face"></use>
-                           </svg>
-                       </a>
-                       <a href="#">
-                           <svg width="16" height="16">
-                               <use xlink:href="assets/images/icons/sprite-social.svg#icon-inst"></use>
-                           </svg>
-                       </a>
-                       <a href="#">
-                           <svg width="16" height="16">
-                               <use xlink:href="assets/images/icons/sprite-social.svg#icon-in"></use>
-                           </svg>
-                       </a>
-                       <a href="#">
-                           <svg width="20" height="20">
-                               <use xlink:href="assets/images/icons/sprite-social.svg#icon-pint"></use>
-                           </svg>
-                       </a>
-                   </div>
-                   <a class="getListed"><p>Get Listed in 2025</p>
-                       <div class="getListed-icon__wrapper">
-                           <svg>
-                               <use xlink:href="assets/images/icons/sprite-multi.svg#arrow-diagonal"></use>
-                           </svg>
-                       </div>
-                   </a>
-               </div>
-               <div class="footer-content__top-grid">
-                   <div class="footer-rankings">
-                       <h2 class="footer-item__title">Our rankings</h2>
-                       <ul class="footer-item__list">
-                           <li>Top 500 BEST U.S. Contractors 2024</li>
-                           <li>Top Contractors by State & City 2024</li>
-                           <li>Top 500 U.S. Contractors by Customer Reviews 2024</li>
-                           <li>ТОП Самых дешевых контракторов США 2024</li>
-                           <li>ТОП Самых дорогих компаний США</li>
-                           <li>Самые старые/опытные лучшие контракторы США 2024 года Типо ТОП 100</li>
-                           <li>Самые молодые лучшие компании США 2024 года (Открытие года) Типо ТОП 100</li>
-                       </ul>
-                   </div>
-                   <div class="footer-contractors">
-                       <h2 class="footer-item__title">For Contractors</h2>
-                       <ul class="footer-item__list">
-                           <li>Benefits for Contractors</li>
-                           <li>Update Company Details</li>
-                           <li>Как повысить свою позицию в рейтинге?</li>
-                           <li>Our Rating Methodology 2024</li>
-                       </ul>
-                   </div>
-                   <div class="footer-partners">
-                       <h2 class="footer-item__title">For Partners</h2>
-                       <ul class="footer-item__list">
-                           <li>Advertise With Us</li>
-                           <li>Become a Sponsor</li>
-                       </ul>
-                   </div>
-                   <div class="footer-about">
-                       <h2 class="footer-item__title">Who We Are</h2>
-                       <ul class="footer-item__list">
-                           <li>About us</li>
-                           <li>Careers</li>
-                           <li>Contact Us</li>
-                           <li>Blog</li>
-                       </ul>
-                   </div>
-                   <div class="footer-customers">
-                       <h2 class="footer-item__title">For Customers</h2>
-                       <ul class="footer-item__list">
-                           <li>Benefits for Customers</li>
-                           <li>Our Rating Methodology 2024</li>
-                           <li>Contractor Issue Support</li>
-                           <li>Leave a Contractor Review</li>
-                       </ul>
-                   </div>
-                   <div class="footer-evaluation">
-                       <h2 class="footer-item__title">Our Evaluation Process</h2>
-                       <ul class="footer-item__list">
-                           <li>Our Selection Process</li>
-                           <li>The Secret Shopper Method</li>
-                           <li>Rating Methodology 2024</li>
-                       </ul>
-                   </div>
-                   <div class="footer-marketing">
-                       <h2 class="footer-item__title">Marketing &
-                           Promotion Services</h2>
-                       <ul class="footer-item__list">
-                           <li>Услуга 1</li>
-                           <li>Услуга 2</li>
-                           <li>Услуга 3</li>
-                       </ul>
-                   </div>
-               </div>
-           </div>
-           <div class="footer-line"></div>
+        <div class="container">
+            <div class="footer-content__top">
+                <div class="footer-first-block">
+                    <picture>
+                        <source srcset="/assets/images/white-logo.svg">
+                        <img src="/assets/images/white-logo.svg" alt="logo" loading="lazy">
+                    </picture>
+                    <p class="footer-content__top-text">
+                        2024 Ranking: Top Countertop
+                        Companies in the USA
+                    </p>
+                    <div class="footer-content__top-social__links">
+                        <a href="#">
+                            <svg width="24" height="24">
+                                <use xlink:href="assets/images/icons/sprite-social.svg#icon-face"></use>
+                            </svg>
+                        </a>
+                        <a href="#">
+                            <svg width="16" height="16">
+                                <use xlink:href="assets/images/icons/sprite-social.svg#icon-inst"></use>
+                            </svg>
+                        </a>
+                        <a href="#">
+                            <svg width="16" height="16">
+                                <use xlink:href="assets/images/icons/sprite-social.svg#icon-in"></use>
+                            </svg>
+                        </a>
+                        <a href="#">
+                            <svg width="20" height="20">
+                                <use xlink:href="assets/images/icons/sprite-social.svg#icon-pint"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    <a class="getListed"><p>Get Listed in 2025</p>
+                        <div class="getListed-icon__wrapper">
+                            <svg>
+                                <use xlink:href="assets/images/icons/sprite-multi.svg#arrow-diagonal"></use>
+                            </svg>
+                        </div>
+                    </a>
+                </div>
+                <div class="footer-content__top-grid">
+                    <details open class="footer-rankings no-toggle">
+                        <summary class="footer-item__title">Our rankings</summary>
+                        <ul class="footer-item__list">
+                            <li>Top 500 BEST U.S. Contractors 2024</li>
+                            <li>Top Contractors by State & City 2024</li>
+                            <li>Top 500 U.S. Contractors by Customer Reviews 2024</li>
+                            <li>ТОП Самых дешевых контракторов США 2024</li>
+                            <li>ТОП Самых дорогих компаний США</li>
+                            <li>Самые старые/опытные лучшие контракторы США 2024 года Типо ТОП 100</li>
+                            <li>Самые молодые лучшие компании США 2024 года (Открытие года) Типо ТОП 100</li>
+                        </ul>
+                    </details>
 
-           <div class="footer-content__articles">
-               <h1 class="footer-content__articles-title">Explore Our Countertop Company Rankings by State</h1>
+                    <details open class="footer-contractors no-toggle">
+                        <summary class="footer-item__title">For Contractors</summary>
+                        <ul class="footer-item__list">
+                            <li>Benefits for Contractors</li>
+                            <li>Update Company Details</li>
+                            <li>Как повысить свою позицию в рейтинге?</li>
+                            <li>Our Rating Methodology 2024</li>
+                        </ul>
+                    </details>
 
-               <div class="footer-content__articles-grid">
-                   <div>Charleston</div><div>Charleston</div><div>Charleston</div><div>Charleston</div><div>Charleston</div><div>Charleston</div><div></div><div>Charleston</div>
-                   <div>Charleston</div><div>Charleston</div><div></div><div>Charleston</div><div></div><div>Charleston</div><div>Charleston</div><div>Charleston</div>
-                   <div>Charleston</div><div>Charleston</div><div>Charleston</div><div></div><div></div><div>Charleston</div><div></div><div></div>
-                   <div>Charleston</div><div></div><div>Charleston</div><div></div><div></div><div>Charleston</div><div>Charleston</div><div>Charleston</div>
-                   <div>Charleston</div><div>Charleston</div><div>Charleston</div><div>Charleston</div><div>Charleston</div><div></div><div>Charleston</div><div>Charleston</div>
-                   <div></div><div></div><div>Charleston</div><div>Charleston</div><div>Charleston</div><div>Charleston</div><div>Charleston</div><div>Charleston</div>
-                   <div></div><div>Charleston</div><div>Charleston</div><div>Charleston</div><div>Charleston</div><div>Charleston</div><div>Charleston</div><div>Charleston</div>
-                   <div></div><div>Charleston</div>
-               </div>
+                    <details open class="footer-partners no-toggle">
+                        <summary class="footer-item__title">For Partners</summary>
+                        <ul class="footer-item__list">
+                            <li>Advertise With Us</li>
+                            <li>Become a Sponsor</li>
+                        </ul>
+                    </details>
 
-               <div class="footer-line"></div>
-           </div>
-           <div class="footer-content__bottom">
+                    <details open class="footer-about no-toggle">
+                        <summary class="footer-item__title">Who We Are</summary>
+                        <ul class="footer-item__list">
+                            <li>About us</li>
+                            <li>Careers</li>
+                            <li>Contact Us</li>
+                            <li>Blog</li>
+                        </ul>
+                    </details>
+
+                    <details open class="footer-customers no-toggle">
+                        <summary class="footer-item__title">For Customers</summary>
+                        <ul class="footer-item__list">
+                            <li>Benefits for Customers</li>
+                            <li>Our Rating Methodology 2024</li>
+                            <li>Contractor Issue Support</li>
+                            <li>Leave a Contractor Review</li>
+                        </ul>
+                    </details>
+
+                    <details open class="footer-evaluation no-toggle">
+                        <summary class="footer-item__title">Our Evaluation Process</summary>
+                        <ul class="footer-item__list">
+                            <li>Our Selection Process</li>
+                            <li>The Secret Shopper Method</li>
+                            <li>Rating Methodology 2024</li>
+                        </ul>
+                    </details>
+
+                    <details open class="footer-marketing no-toggle">
+                        <summary class="footer-item__title">Marketing & Promotion Services</summary>
+                        <ul class="footer-item__list">
+                            <li>Услуга 1</li>
+                            <li>Услуга 2</li>
+                            <li>Услуга 3</li>
+                        </ul>
+                    </details>
+                </div>
+            </div>
+            <div class="footer-line"></div>
+
+            <div class="footer-content__articles">
+                <h1 class="footer-content__articles-title">Explore Our Countertop Company Rankings by State</h1>
+
+                <div class="footer-content__articles-grid">
+                    <div>Charleston</div>
+                    <div>Charleston</div>
+                    <div>Charleston</div>
+                    <div>Charleston</div>
+                    <div>Charleston</div>
+                    <div>Charleston</div>
+                    <div></div>
+                    <div>Charleston</div>
+                    <div>Charleston</div>
+                    <div>Charleston</div>
+                    <div></div>
+                    <div>Charleston</div>
+                    <div></div>
+                    <div>Charleston</div>
+                    <div>Charleston</div>
+                    <div>Charleston</div>
+                    <div>Charleston</div>
+                    <div>Charleston</div>
+                    <div>Charleston</div>
+                    <div></div>
+                    <div></div>
+                    <div>Charleston</div>
+                    <div></div>
+                    <div></div>
+                    <div>Charleston</div>
+                    <div></div>
+                    <div>Charleston</div>
+                    <div></div>
+                    <div></div>
+                    <div>Charleston</div>
+                    <div>Charleston</div>
+                    <div>Charleston</div>
+                    <div>Charleston</div>
+                    <div>Charleston</div>
+                    <div>Charleston</div>
+                    <div>Charleston</div>
+                    <div>Charleston</div>
+                    <div></div>
+                    <div>Charleston</div>
+                    <div>Charleston</div>
+                    <div></div>
+                    <div></div>
+                    <div>Charleston</div>
+                    <div>Charleston</div>
+                    <div>Charleston</div>
+                    <div>Charleston</div>
+                    <div>Charleston</div>
+                    <div>Charleston</div>
+                    <div></div>
+                    <div>Charleston</div>
+                    <div>Charleston</div>
+                    <div>Charleston</div>
+                    <div>Charleston</div>
+                    <div>Charleston</div>
+                    <div>Charleston</div>
+                    <div>Charleston</div>
+                    <div></div>
+                    <div>Charleston</div>
+                </div>
+
+                <div class="footer-line"></div>
+            </div>
+            <div class="footer-content__bottom">
                 <div class="footer-content__bottom-copyright">
                     <p>© 2022 - 2023 Countertops Contractors, Inc.</p>
                     <p><span>·</span>Privacy Policy</p>
                     <p><span>·</span>Terms of Use</p>
                     <p><span>·</span>Site Map</p>
                 </div>
-               <div class="footer-content__bottom-image">
-                   <img src="/assets/images/developed_by.png">
-               </div>
-           </div>
-       </div>
+                <div class="footer-content__bottom-image">
+                    <picture>
+                        <source srcset="/assets/images/developed_by.png">
+                        <img src="/assets/images/developed_by.png" loading="lazy">
+                    </picture>
+                </div>
+            </div>
+        </div>
     </div>
 </footer>
 

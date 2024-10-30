@@ -1,10 +1,23 @@
-body, html button{
-    font-family: interR;
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: interR;
+}
+
+*::before, *::after {
+    box-sizing: border-box;
+}
+
+html {
     font-size: 14px;
+    font-weight: 500;
+}
+
+body {
     background-color: rgba(244, 244, 246, 1);
 }
+
 button,
 a {
     cursor: pointer;
@@ -12,9 +25,42 @@ a {
     font-family: inherit;
 }
 
-.container{
+.container {
     max-width: 1400px;
     margin: 0 auto;
+}
+
+@media (max-width: 1440px) {
+    html {
+        font-size: 13px;
+    }
+    .container {
+        max-width: 1200px;
+    }
+}
+
+@media (max-width: 1200px) {
+    html {
+        font-size: 12px;
+    }
+    .container {
+        max-width: 1000px;
+    }
+}
+
+@media (max-width: 992px) {
+    html {
+        font-size: 11px;
+    }
+    .container {
+        max-width: 800px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 100%;
+    }
 }
 
 .header-content{
@@ -38,10 +84,6 @@ header{
 p {
     color: rgba(30, 56, 57, 1);
 }
-.container{
-    max-width: 1400px;
-    margin: 0 auto;
-}
 
 .header-content__icons {
     display: flex;
@@ -64,7 +106,6 @@ p {
 .header-content__items ul {
     list-style: none;
     display: flex;
-    margin: 0;
     gap: 6px;
     padding: 0;
 }
@@ -120,6 +161,7 @@ p {
 }
 .menu-Rankings{
     width: 645px;
+    box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
 }
 .header-content__menu ul li ul li{
     padding: 10px;
@@ -128,11 +170,11 @@ p {
 }
 .menu-ForContractors{
     width: 362px;
+    box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
 }
 .menu-ForContractors button{
     width: 100%;
     display: flex;
-
 }
 .menu-ForContractors button p{
     margin-right:  auto;
@@ -140,12 +182,15 @@ p {
 }
 .menu-ForCustomers{
     width: 278px;
+    box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
 }
 .menu-ForPartners{
     width: 203px;
+    box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
 }
 .menu-OurEvaluationProcess{
     width: 266px;
+    box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
 }
 .header-content__menu ul li{
     list-style: none;
@@ -157,6 +202,8 @@ p {
     margin-left: 6px;
 }
 .header-content__menu ul li a{
+    display: flex;
+    align-items: center;
     text-decoration: none;
     color: #282727;
 }
@@ -194,7 +241,6 @@ p {
 .getListed .getListed-icon__wrapper svg {
     width: 12px;
     height: 12px;
-    margin: 0;
 }
 .header-content_button{
     gap: 24px;
@@ -293,7 +339,6 @@ p {
 }
 .frame-updateDate p{
     color: #fff;
-    margin: 0;
 }
 .frame-leftColumn{
     width: 50%;
@@ -306,7 +351,6 @@ p {
     font-weight: 700;
     font-size: 40px;
     font-family: interB;
-    margin: 0;
     color: #fff;
 }
 .frame-description p{
@@ -434,6 +478,7 @@ p {
     padding: 16px 12px;
     border-radius: 10px;
     box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+    margin-top: 15px;
 }
 .dropdown:hover {
     background-color: #E4E4E7;
@@ -465,7 +510,6 @@ p {
 .main-content__sort .dropdown-menu{
     width: 100%;
     left: 0;
-    max-width: -webkit-fill-available;
 }
 .dropdown-sort {
     width: 100%;
@@ -495,7 +539,6 @@ p {
 }
 .sortResult-item p{
     color: rgba(40, 39, 39, 1);
-    margin: 0;
     display: flex;
     align-items: center;
     gap: 6px;
@@ -535,7 +578,6 @@ p {
     color: rgba(30, 56, 57, 1);
     padding-top: 20px;
     font-size: 28px;
-    margin: 0;
     line-height: 28px;
     padding-left: 20px;
     font-weight: 600;
@@ -561,9 +603,12 @@ p {
     position: relative;
     border-radius: 10px;
     margin-right: 11px;
+    height: fit-content;
 }
 .card-item__img .card-bg {
     position: relative;
+}
+.card-item__img .card-bg img {
     height: 100%;
 }
 .card-bg__icons {
@@ -656,13 +701,10 @@ p {
 }
 .name-title h3{
     color: #1E3839;
-    margin: 0;
-    font-weight: 500;
     font-size: 20px;
     line-height: 20px;
 }
 .name-title p{
-    margin: 0;
     font-weight: 400;
     font-size: 12px;
     line-height: 20px;
@@ -682,9 +724,6 @@ p {
 .score-cup p {
     font-size: 16px;
     font-weight: 600;
-}
-.name-score p{
-    margin: 0;
 }
 .name-score{
     padding: 9px 10px 9px 0;
@@ -710,7 +749,6 @@ p {
     width: 24px;
 }
 .shopperReport-title__like p{
-    margin: 0;
     padding-right: 5px;
     font-weight: 600;
 }
@@ -728,8 +766,6 @@ p {
 }
 .shopperReport-title__name p{
     font-weight: 600;
-    font-size: 14px;
-    margin: 0;
 }
 .shopperReport-score__items{
     display: flex;
@@ -766,7 +802,6 @@ p {
 }
 .shopperReport-score__value p {
     font-size: 12px;
-    font-weight: 500;
     color: #282727;
 }
 .shopperReport-score__nameItems{
@@ -792,13 +827,9 @@ p {
     
     margin-top: 11px;
 }
-.card-information p{
-    margin: 0;
-}
+
 .card-information__title p{
     margin-bottom: 4px;
-    font-size: 14px;
-    font-weight: 500;
 }
 .card-information__text p{
     color: #ABA9A8;
@@ -847,9 +878,6 @@ p {
     padding: 10px;
     margin-left: 12px;
 }
-.feedBack-Totalscore p{
-    margin: 0;
-}
 .feedBack-listScore{
     display: flex;
     padding: 10px 0;
@@ -862,13 +890,8 @@ p {
     gap: 7px ;
     align-items: center;
 }
-.listScore-second__item p{
-    margin: 0;
-    
-}
 .feedBack-listScore__first p{
     color: rgba(61, 59, 57, 1);
-    margin: 0;
 }
 .feedBack-listScore__first{
     display: flex;
@@ -905,16 +928,11 @@ p {
     padding-top: 10px;
 }
 .feedBack-personScore p{
-    margin: 0;
     color: rgba(171, 169, 168, 1);
 }
 .feedBack-personScore a{
     color: #282727;
     font-weight: 600;
-}
-.personScore-title p{
-    font-weight: 500;
-    margin: 0;
 }
 .button-contacts button{
     background-color: #B52E51;
@@ -924,6 +942,7 @@ p {
     border: none;
     width: 100%;
     line-height: 10px;
+    height: 48px;
 }
 .button-contacts button a {
     color: #fff;
@@ -940,6 +959,7 @@ p {
     background-color: #fff;
     width: 100%;
     line-height: 10px;
+    height: 48px;
 }
 .button-profile button a {
     color: #B52E51;
@@ -961,6 +981,7 @@ p {
     border-radius: 8px;
     border: 1px solid rgba(181, 46, 81, 1);
     color: rgba(181, 46, 81, 1);
+    background: transparent;
     height: 48px;
     font-weight: 700;
     cursor: pointer;
@@ -1026,9 +1047,7 @@ p {
 }
 .question-item p {
     font-size: 20px;
-    font-weight: 500;
     padding-left: 8px;
-    margin: 0;
 }
 .question-item__plus {
     display: flex;
@@ -1068,8 +1087,6 @@ p {
 .comments-item__title {
     font-size: 20px;
     color: rgba(40, 39, 39, 1);
-    margin: 0;
-    font-weight: 500;
 }
 .comments-item__rating {
     display: flex;
@@ -1082,22 +1099,16 @@ p {
     height: 20px;
 }
 .comments-item__rating-date {
-    margin: 0;
     color: rgba(171, 169, 168, 1);
     font-size: 12px;
 }
 .comments-item__text {
     color: rgba(40, 39, 39, 1);
-    font-size: 14px;
     line-height: 18px;
-    margin: 0;
     margin-bottom: 12px;
 }
 .comments-item__link {
     color: rgba(40, 39, 39, 1);
-    font-size: 14px;
-    font-weight: 500;
-    margin: 0;
     cursor: pointer;
     text-decoration: underline;
     line-height: 18px;
@@ -1129,13 +1140,10 @@ p {
     color: #fff;
     font-size: 28px;
     font-weight: 600;
-    margin: 0;
 }
 .business-text {
     color: rgba(171, 169, 168, 1);
     font-size: 20px;
-    font-weight: 500;
-    margin: 0;
 }
 .business-btn {
     height: 48px;
@@ -1152,7 +1160,6 @@ p {
     border-radius: 20px;
 }
 .rating-title {
-    margin: 0;
     color: rgba(30, 56, 57, 1);
     font-size: 28px;
     font-weight: 600;
@@ -1194,7 +1201,6 @@ p {
     margin-top: 16px;
     margin-bottom: 24px;
     color: rgba(165, 175, 176, 1);
-    font-size: 14px;
 }
 .footer-content__top-social__links {
     display: flex;
@@ -1260,14 +1266,12 @@ p {
     border-radius: 10px;
 }
 .footer-item__title {
-    margin: 0;
     margin-bottom: 20px;
+    font-size: 20px;
     color: rgba(165, 175, 176, 1);
 }
 .footer-item__list {
     list-style: none;
-    padding: 0;
-    margin: 0;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -1310,5 +1314,14 @@ p {
     display: flex;
     gap: 10px;
     color: rgba(165, 175, 176, 1);
-    margin: 0;
+}
+
+details > summary {
+    list-style: none;
+    appearance: none;
+    cursor: default;
+}
+
+.no-toggle[open] summary {
+    pointer-events: none;
 }

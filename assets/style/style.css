@@ -642,23 +642,18 @@ a {
     position: relative;
     border-radius: 10px;
     grid-area: card-img;
+    max-height: fit-content;
 }
 .card-item__img .card-bg {
     display: block;
     position: relative;
-    width: 100%;
-    height: 100%;
-}
-.card-item__img .card-bg img {
-    height: 100%;
-    width: 100%;
 }
 .card-bg__icons {
     display: flex;
     gap: 5px;
     position: absolute;
-    bottom: 12px;
-    left: 12px;
+    bottom: 0.75rem;
+    left: 0.75rem;
 }
 /*.card-bg__icon svg {*/
 /*    width: 16px;*/
@@ -673,6 +668,10 @@ a {
     padding: 6px;
     border-radius: 6px;
     cursor: pointer;
+}
+.card-bg__icon svg {
+    width: 15px;
+    height: 13px;
 }
 .card-bg__icon span {
     color: #fff;
@@ -702,20 +701,26 @@ a {
     border-radius: 16px;
     display: flex;
 }
+.gold-cup__wrapper {
+    padding: 6px;
+    background: #fff;
+    position: absolute;
+    z-index: 1;
+    border-bottom-right-radius: 6px;
+}
 .gold-cup{
     background-color: #1E3839;
     display: flex;
     align-items: center;
-    width: 3.875rem;
-    height: 2.25rem;
-    position: absolute;
     gap: 6px;
     border-radius: 6px;
     justify-content: center;
+    width: 3.875rem;
+    height: 2.25rem;
 }
 .gold-cup svg {
-    width: 24px;
-    height: 24px;
+    width: 1.5rem;
+    height: 1.5rem;
 }
 .gold-cup span {
     font-weight: 700;
@@ -1195,6 +1200,9 @@ a {
     color: #fff;
     background: transparent;
     padding: var(--spacing-14) 3.125rem;
+    width: 100%;
+    line-height: 10px;
+
 }
 .btn-showMore__wrapper {
     margin-bottom: 20px;
@@ -1433,9 +1441,6 @@ details > summary {
     .card-item__feedBackAndButton {
         width: 40%;
     }
-    .card-item__img {
-        height: fit-content;
-    }
     .card-item__img .card-bg {
         height: auto;
     }
@@ -1444,6 +1449,9 @@ details > summary {
     }
 }
 @media (max-width: 992px) {
+    .card-items {
+        grid-template-columns: auto 41% 29%;
+    }
     .footer-content__top-grid {
         grid-template-columns: repeat(3, 14rem);
         grid-template-areas:
@@ -1619,6 +1627,10 @@ details > summary {
     }
     .card-item__img {
         order: 1;
+    }
+    .card-item__img .card-bg img {
+        width: 100%;
+        border-radius: 8px;
     }
     .card-item__header {
         order: 2;

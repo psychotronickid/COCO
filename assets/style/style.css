@@ -1408,6 +1408,9 @@ details > summary {
 .card-bg__heart-icon {
     display: none;
 }
+.burger-menu {
+    display: none;
+}
 @media (max-width: 1440px) {
     .footer-content__articles-grid {
         grid-template-columns: repeat(6, 1fr);
@@ -1846,5 +1849,38 @@ details > summary {
     }
     .footer-content__bottom-links svg {
         fill: #fff;
+    }
+    .burger-menu {
+        width: 32px;
+        height: 32px;
+        background-color: rgba(181, 46, 81, 1);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .burger-menu-icon {
+        width: 16px;
+        height: 1px;
+        background-color: #fff;
+        position: relative;
+    }
+
+    .burger-menu-icon::before,
+    .burger-menu-icon::after {
+        content: "";
+        width: 16px;
+        height: 1px;
+        background-color: #fff;
+        position: absolute;
+        left: 0;
+    }
+    .burger-menu-icon::before {
+        top: -6px;
+    }
+    .burger-menu-icon::after {
+        top: 6px;
     }
 }

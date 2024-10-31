@@ -5,8 +5,11 @@
     <title>Title</title>
     <link rel="stylesheet" type="text/css" href="assets/style/style.css">
     <link rel="stylesheet" type="text/css" href="assets/style/fonts.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="assets/JS/main.js"></script>
 </head>
 <body>
+<script src="assets/JS/main.js" defer></script>
 <header>
     <div class="header-content">
         <div class="header-content__navbar container">
@@ -82,7 +85,7 @@
                             <li><a href="#">Update Company Details</a></li>
                             <li><a href="#">Как повысить свою позицию в рейтинге?</a></li>
                             <li><a href="#">Our Rating Methodology 2024</a></li>
-                            <li><a class="getListed">Get Listed in 2025
+                            <li><a class="btn-primary">Get Listed in 2025
                                 <div class="getListed-icon__wrapper">
                                     <svg>
                                         <use xlink:href="assets/images/icons/sprite-multi.svg#arrow-diagonal"></use>
@@ -131,7 +134,7 @@
                 <svg class="header-heart-icon" aria-label="Favorites">
                     <use xlink:href="assets/images/icons/sprite-multi.svg#heart-empty"></use>
                 </svg>
-                <a class="getListed"><p>Get Listed in 2025</p>
+                <a class="btn-primary"><p>Get Listed in 2025</p>
                     <div class="getListed-icon__wrapper">
                         <svg>
                             <use xlink:href="assets/images/icons/sprite-multi.svg#arrow-diagonal"></use>
@@ -687,22 +690,24 @@
                         </div>
                         <div class="card-item__buttons">
                             <div class="button-profile">
-                                <button aria-label="View profile" type="button"><a href="#">View profile</a>
+                                <button aria-label="View profile" class="btn-secondary" type="button"><a href="#">View
+                                    profile</a>
                                 </button>
                             </div>
                             <div class="button-contacts">
-                                <button aria-label="Show contacts" type="button"><a href="#">Show contacts</a>
+                                <button aria-label="Show contacts" class="btn-primary" type="button"><a href="#">Show
+                                    contacts</a>
                                 </button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-           <div class="btn-showMore__wrapper">
-               <button aria-label="Show more" class="btn-showMore">
-                   Show more
-               </button>
-           </div>
+            <div class="btn-showMore__wrapper">
+                <button aria-label="Show more" class="btn-secondary">
+                    Show more
+                </button>
+            </div>
             <div class="pagination">
                 <div class="pagination-item">
                     <svg>
@@ -992,7 +997,7 @@
         <section class="business">
             <div class="business-left">
                 <picture>
-                    <source srcset="/assets/images/kitchen.png">
+                    <source srcset="/assets/images/kitchen-mobile.png" media="(max-width: 768px)">
                     <img src="/assets/images/kitchen.png" alt="business" loading="lazy">
                 </picture>
                 <div class="business-text__block">
@@ -1002,7 +1007,7 @@
                 </div>
             </div>
             <div class="business-right">
-                <button aria-label="Add business" class="business-btn">
+                <button aria-label="Add business" class="btn-tertiary">
                     Add business
                 </button>
             </div>
@@ -1096,7 +1101,7 @@
                             </svg>
                         </a>
                     </div>
-                    <a class="getListed"><p>Get Listed in 2025</p>
+                    <a class="btn-primary"><p>Get Listed in 2025</p>
                         <div class="getListed-icon__wrapper">
                             <svg>
                                 <use xlink:href="assets/images/icons/sprite-multi.svg#arrow-diagonal"></use>
@@ -1105,8 +1110,13 @@
                     </a>
                 </div>
                 <div class="footer-content__top-grid">
-                    <details open class="footer-rankings no-toggle">
-                        <summary class="footer-item__title">Our rankings</summary>
+                    <div class="footer-item footer-rankings">
+                        <div class="footer-item__title-wrapper">
+                            <h2 class="footer-item__title">Our rankings</h2>
+                            <svg>
+                                <use xlink:href="assets/images/icons/sprite-multi.svg#arrow-down"></use>
+                            </svg>
+                        </div>
                         <ul class="footer-item__list">
                             <li>Top 500 BEST U.S. Contractors 2024</li>
                             <li>Top Contractors by State & City 2024</li>
@@ -1116,69 +1126,107 @@
                             <li>Самые старые/опытные лучшие контракторы США 2024 года Типо ТОП 100</li>
                             <li>Самые молодые лучшие компании США 2024 года (Открытие года) Типо ТОП 100</li>
                         </ul>
-                    </details>
+                    </div>
 
-                    <details open class="footer-contractors no-toggle">
-                        <summary class="footer-item__title">For Contractors</summary>
+                    <div class="footer-item footer-contractors">
+                        <div class="footer-item__title-wrapper">
+                            <h2 class="footer-item__title">For contractors</h2>
+                            <svg>
+                                <use xlink:href="assets/images/icons/sprite-multi.svg#arrow-down"></use>
+                            </svg>
+                        </div>
                         <ul class="footer-item__list">
                             <li>Benefits for Contractors</li>
                             <li>Update Company Details</li>
                             <li>Как повысить свою позицию в рейтинге?</li>
                             <li>Our Rating Methodology 2024</li>
                         </ul>
-                    </details>
+                    </div>
 
-                    <details open class="footer-partners no-toggle">
-                        <summary class="footer-item__title">For Partners</summary>
+                    <div class="footer-item footer-partners">
+                        <div class="footer-item__title-wrapper">
+                            <h2 class="footer-item__title">For partners</h2>
+                            <svg>
+                                <use xlink:href="assets/images/icons/sprite-multi.svg#arrow-down"></use>
+                            </svg>
+                        </div>
                         <ul class="footer-item__list">
                             <li>Advertise With Us</li>
                             <li>Become a Sponsor</li>
                         </ul>
-                    </details>
+                    </div>
 
-                    <details open class="footer-about no-toggle">
-                        <summary class="footer-item__title">Who We Are</summary>
+                    <div class="footer-item footer-about">
+                        <div class="footer-item__title-wrapper">
+                            <h2 class="footer-item__title">Who we are</h2>
+                            <svg>
+                                <use xlink:href="assets/images/icons/sprite-multi.svg#arrow-down"></use>
+                            </svg>
+                        </div>
                         <ul class="footer-item__list">
                             <li>About us</li>
                             <li>Careers</li>
                             <li>Contact Us</li>
                             <li>Blog</li>
                         </ul>
-                    </details>
+                    </div>
 
-                    <details open class="footer-customers no-toggle">
-                        <summary class="footer-item__title">For Customers</summary>
+                    <div class="footer-item footer-customers">
+                        <div class="footer-item__title-wrapper">
+                            <h2 class="footer-item__title">For customers</h2>
+                            <svg>
+                                <use xlink:href="assets/images/icons/sprite-multi.svg#arrow-down"></use>
+                            </svg>
+                        </div>
                         <ul class="footer-item__list">
                             <li>Benefits for Customers</li>
                             <li>Our Rating Methodology 2024</li>
                             <li>Contractor Issue Support</li>
                             <li>Leave a Contractor Review</li>
                         </ul>
-                    </details>
+                    </div>
 
-                    <details open class="footer-evaluation no-toggle">
-                        <summary class="footer-item__title">Our Evaluation Process</summary>
+                    <div class="footer-item footer-evaluation">
+                        <div class="footer-item__title-wrapper">
+                            <h2 class="footer-item__title">Our Evaluation Process</h2>
+                            <svg>
+                                <use xlink:href="assets/images/icons/sprite-multi.svg#arrow-down"></use>
+                            </svg>
+                        </div>
                         <ul class="footer-item__list">
                             <li>Our Selection Process</li>
                             <li>The Secret Shopper Method</li>
                             <li>Rating Methodology 2024</li>
                         </ul>
-                    </details>
+                    </div>
 
-                    <details open class="footer-marketing no-toggle">
-                        <summary class="footer-item__title">Marketing & Promotion Services</summary>
+                    <div class="footer-item footer-marketing">
+                        <div class="footer-item__title-wrapper">
+                            <h2 class="footer-item__title">Marketing & Promotion Services</h2>
+                            <svg>
+                                <use xlink:href="assets/images/icons/sprite-multi.svg#arrow-down"></use>
+                            </svg>
+                        </div>
                         <ul class="footer-item__list">
                             <li>Услуга 1</li>
                             <li>Услуга 2</li>
                             <li>Услуга 3</li>
                         </ul>
-                    </details>
+                    </div>
                 </div>
             </div>
             <div class="footer-line"></div>
 
             <div class="footer-content__articles">
-                <h1 class="footer-content__articles-title">Explore Our Countertop Company Rankings by State</h1>
+                <div class="footer-content__articles-title__wrapper">
+                    <h1 class="footer-content__articles-title footer-content__articles-title-desktop">Explore Our Countertop
+                        Company Rankings by State</h1>
+                    <h1 class="footer-content__articles-title footer-content__articles-title-mobile">Articles</h1>
+
+                    <svg>
+                        <use xlink:href="assets/images/icons/sprite-multi.svg#arrow-down"></use>
+                    </svg>
+                </div>
 
                 <div class="footer-content__articles-grid">
                     <div>Charleston</div>
@@ -1249,6 +1297,28 @@
                     <p><span>·</span>Privacy Policy</p>
                     <p><span>·</span>Terms of Use</p>
                     <p><span>·</span>Site Map</p>
+                </div>
+                <div class="footer-content__bottom-links">
+                    <a href="#">
+                        <svg width="24" height="24">
+                            <use xlink:href="assets/images/icons/sprite-social.svg#icon-face"></use>
+                        </svg>
+                    </a>
+                    <a href="#">
+                        <svg width="16" height="16">
+                            <use xlink:href="assets/images/icons/sprite-social.svg#icon-inst"></use>
+                        </svg>
+                    </a>
+                    <a href="#">
+                        <svg width="16" height="16">
+                            <use xlink:href="assets/images/icons/sprite-social.svg#icon-in"></use>
+                        </svg>
+                    </a>
+                    <a href="#">
+                        <svg width="20" height="20">
+                            <use xlink:href="assets/images/icons/sprite-social.svg#icon-pint"></use>
+                        </svg>
+                    </a>
                 </div>
                 <div class="footer-content__bottom-image">
                     <picture>
